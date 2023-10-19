@@ -1,0 +1,8 @@
+1. Para a colocação de jogadores, para que não haja sobreposição do mesmo, fazemos com que este esper 2 segundos antes de entrar 
+	na Cell que lhe foi atribuída, de modo a que depois consiga entrar.
+2. Para o fim do jogo, implementámos um CountDownLatch, que aquando um jogador termina (sua energia é 10) fazemos um CountDown, 
+	em que foi inicializado a 3, tal como pedido, logo ao fim de 3 jogadores vitoriosos, o jogo termina
+3. Na cell usamos o sychronized para evitar a situaçao de deadlock em que 2 ou mais players tentam entrar na mesma Cell.
+
+4. O resto do projeto, acreditaos nós, está de acordo com o que nos foi pedido e ensinado ao longo do semestre, tentando sempre 
+	implementar aquilo que nos foi ensinado. Mas não dispensando de alguns possíveis erros óbvios que nos tenham escapado. 
